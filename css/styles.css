@@ -44,6 +44,8 @@ body{
     width: 450px;
     background: #fff;
     border-radius: var(--Corner-radius);
+    outline: 0.8px solid #fff;
+    box-shadow: var(--Desaturated-blue) 0  0.1px 40px 0;
 }
 
 /* Hero image */
@@ -130,6 +132,8 @@ body{
     border-radius: calc(0.45 * var(--Corner-radius));
     border: none;
     cursor: pointer;
+
+    box-shadow: rgb(56, 41, 224,0.2) 0 16px 16px 0;
 }
 .payment-button:hover{
     opacity: 0.7;
