@@ -10,6 +10,19 @@
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
+
+    /* Background */
+    --Para-size: 1rem;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .attribution {
