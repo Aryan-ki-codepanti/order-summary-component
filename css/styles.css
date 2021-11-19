@@ -16,6 +16,8 @@
     --fw-500: 500;
     --fw-700: 700;
     --fw-900: 900;
+
+    --Corner-radius: 20px;
 }
 
 *{
@@ -28,9 +30,110 @@
 body{
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 50vh;
     background-color: var(--Pale-blue);
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* wrapper */
+.wrapper{
+    width: 450px;
+    background: #fff;
+    border-radius: var(--Corner-radius);
+}
+
+/* Hero image */
+.hero-image{
+    border-radius: var(--Corner-radius) var(--Corner-radius) 0 0;
+}
+
+/* Content */
+.content{
+    text-align: center;
+    padding: 0 3.2em;
+}
+
+.content h1{
+    margin-block: 1.8em 0.75em;
+    font-size: calc(1.5 * var(--Para-size));
+    font-weight: var(--fw-900);
+}
+
+.content p{
+    font-size: var(--Para-size);
+    color: var(--Desaturated-blue);
+    font-weight: var(--fw-500);
+}
+
+
+/* Plan Box */
+.plan-box{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    background: var(--Very-pale-blue);
+    margin: 1.3rem auto;
+    padding: 1.7em 1.9em;
+
+    width: 80%;
+    border-radius: var(--Corner-radius);
+}
+
+.plan-box > div{
+    flex: 1;
+}
+
+.plan-box h4{
+    margin-bottom: 0.25em;
+    font-weight: var(--fw-700);
+}
+.plan-box a{
+    font-weight: var(--fw-700);
+}
+
+.plan-box span{
+    font-size: var(--Para-size);
+    color: var(--Desaturated-blue);
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 1.8em;
+    display: flex;
+    gap: 1.2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.footer > *{
+    width: 80%;
+    text-align: center;
+    font-weight: var(--fw-700);
+    font-size: 1rem;
+    padding: 0.9em;
+}
+
+.payment-button{
+    color: #fff;
+    background: var(--Bright-blue);
+    border-radius: calc(0.45 * var(--Corner-radius));
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-button{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+/* Attribution */
 
 .attribution {
     font-size: 11px;
