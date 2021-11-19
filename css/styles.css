@@ -94,6 +94,10 @@ body{
 .plan-box a{
     font-weight: var(--fw-700);
 }
+.plan-box a:hover{
+    text-decoration: none;
+    opacity: 0.5;
+}
 
 .plan-box span{
     font-size: var(--Para-size);
@@ -113,7 +117,6 @@ body{
 }
 
 .footer > *{
-    width: 80%;
     text-align: center;
     font-weight: var(--fw-700);
     font-size: 1rem;
@@ -121,16 +124,23 @@ body{
 }
 
 .payment-button{
+    width: 80%;
     color: #fff;
     background: var(--Bright-blue);
     border-radius: calc(0.45 * var(--Corner-radius));
     border: none;
     cursor: pointer;
 }
+.payment-button:hover{
+    opacity: 0.7;
+}
 
 .cancel-button{
     text-decoration: none;
     color: var(--Desaturated-blue);
+}
+.cancel-button:hover{
+    color: var(--Dark-blue);
 }
 
 /* Attribution */
