@@ -44,7 +44,6 @@ body{
     width: 450px;
     background: #fff;
     border-radius: var(--Corner-radius);
-    outline: 0.8px solid #fff;
     box-shadow: var(--Desaturated-blue) 0  0.1px 40px 0;
 }
 
@@ -177,5 +176,25 @@ body{
     .plan-box{
         gap: .3em;
         padding: 1.7em 1.2em;
+    }
+}
+
+/* Comments correction */
+@media screen and (max-width: 375px){
+    :root{
+        font-size: 14px;
+    }
+
+    .plan-box{
+        width: 83%;
+    }
+}
+@media screen and (max-width: 320px){
+    :root{
+        font-size: 13px;
+    }
+
+    .plan-box{
+        width: 83%;
     }
 }
